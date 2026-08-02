@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#10131a">
+  <meta name="description" content="How to request deletion of Mood Blocks leaderboard data.">
+  <title>Mood Blocks Data Deletion Request</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #0b0e14;
+      --surface: #121722;
+      --surface-strong: #171d29;
+      --text: #f4f6fb;
+      --muted: #aeb7c8;
+      --accent: #aab5ff;
+      --accent-soft: rgba(123, 140, 255, 0.14);
+      --border: rgba(255, 255, 255, 0.1);
+      --warning: #ffd479;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-width: 280px;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(76, 93, 190, 0.18), transparent 32rem),
+        var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: #d4d9ff;
+    }
+
+    .page {
+      width: min(100% - 32px, 820px);
+      margin: 0 auto;
+      padding: 34px 0 64px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    nav a {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.035);
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-decoration: none;
+    }
+
+    nav a[aria-current="page"] {
+      border-color: rgba(123, 140, 255, 0.45);
+      background: var(--accent-soft);
+      color: var(--text);
+    }
+
+    header,
+    section {
+      border: 1px solid var(--border);
+      background: rgba(18, 23, 34, 0.92);
+    }
+
+    header {
+      padding: clamp(26px, 7vw, 50px);
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(24, 31, 46, 0.97), rgba(14, 18, 27, 0.97));
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 680px;
+      font-size: clamp(2rem, 7vw, 3.45rem);
+      letter-spacing: -0.045em;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.25rem, 4vw, 1.6rem);
+      letter-spacing: -0.02em;
+    }
+
+    p,
+    ul,
+    ol {
+      margin-top: 0;
+    }
+
+    p:last-child,
+    ul:last-child,
+    ol:last-child {
+      margin-bottom: 0;
+    }
+
+    .lead {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    main {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    section {
+      padding: clamp(22px, 5vw, 34px);
+      border-radius: 18px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .request-box {
+      border-color: rgba(123, 140, 255, 0.35);
+      background: linear-gradient(145deg, var(--accent-soft), rgba(18, 23, 34, 0.92));
+    }
+
+    .email-button {
+      display: inline-block;
+      max-width: 100%;
+      padding: 11px 15px;
+      border: 1px solid rgba(123, 140, 255, 0.58);
+      border-radius: 12px;
+      background: rgba(123, 140, 255, 0.12);
+      color: #d8ddff;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+      text-decoration: none;
+    }
+
+    .notice {
+      padding: 14px 16px;
+      border-left: 3px solid var(--warning);
+      border-radius: 6px 12px 12px 6px;
+      background: rgba(255, 212, 121, 0.08);
+      color: #f2dfb6;
+    }
+
+    footer {
+      padding: 28px 8px 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        width: min(100% - 20px, 820px);
+        padding-top: 18px;
+      }
+
+      header,
+      section {
+        border-radius: 16px;
+      }
+
+      nav a {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <nav aria-label="Policy navigation">
+      <a href="index.html">Privacy Policy</a>
+      <a href="data-deletion.html" aria-current="page">Data Deletion Request</a>
+      <a href="mailto:moodblocks.support@gmail.com">Contact Support</a>
+    </nav>
+
+    <header>
+      <p class="eyebrow">Mood Blocks · com.moodblocks.game</p>
+      <h1>Mood Blocks Data Deletion Request</h1>
+      <p class="lead">
+        This page explains how to request deletion of information associated with the Mood Blocks
+        online leaderboard and how to remove game data stored on your device.
+      </p>
+    </header>
+
+    <main>
+      <section aria-labelledby="accounts-title">
+        <h2 id="accounts-title">No user accounts</h2>
+        <p>
+          Mood Blocks does not require or create a traditional user account. There is no account password,
+          email registration, or account profile. Players choose a nickname inside the game for use on the
+          online leaderboard.
+        </p>
+      </section>
+
+      <section aria-labelledby="data-title">
+        <h2 id="data-title">Leaderboard data</h2>
+        <p>The Mood Blocks online leaderboard may store the following information in Google Firebase Cloud Firestore:</p>
+        <ul>
+          <li>the nickname chosen by the player;</li>
+          <li>the highest score associated with that nickname; and</li>
+          <li>the date and time when the score record was created or updated.</li>
+        </ul>
+      </section>
+
+      <section class="request-box" aria-labelledby="request-title">
+        <h2 id="request-title">How to request deletion</h2>
+        <p>Send a data deletion request to:</p>
+        <p>
+          <a class="email-button" href="mailto:moodblocks.support@gmail.com?subject=Mood%20Blocks%20Data%20Deletion%20Request">moodblocks.support@gmail.com</a>
+        </p>
+        <p>Please include only:</p>
+        <ol>
+          <li>the exact nickname you used in Mood Blocks;</li>
+          <li>your approximate score, if you remember it; and</li>
+          <li>a short statement that this is a Mood Blocks data deletion request.</li>
+        </ol>
+        <p class="notice">
+          Do not send a password, identity document, phone number, payment information, or any other
+          unnecessary personal information. Mood Blocks does not need those details to process this request.
+        </p>
+      </section>
+
+      <section aria-labelledby="process-title">
+        <h2 id="process-title">What happens after a request</h2>
+        <p>
+          After the request has been reasonably verified, the leaderboard record for the relevant nickname,
+          including its score and record timestamp, will be deleted from Firebase Cloud Firestore. Requests
+          will be handled within a reasonable period. No fixed completion time is promised because additional
+          review may occasionally be needed to avoid deleting another player's record.
+        </p>
+      </section>
+
+      <section aria-labelledby="local-title">
+        <h2 id="local-title">Deleting data stored on your device</h2>
+        <p>
+          Game progress and settings stored in localStorage on your device can be removed by clearing Mood Blocks'
+          app storage in Android settings or by uninstalling the app. Depending on your Android backup settings,
+          a device backup may later restore some local app data.
+        </p>
+      </section>
+
+      <section aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>
+          Developer: Oğuzhan Dilmaç<br>
+          App: Mood Blocks<br>
+          Package: com.moodblocks.game
+        </p>
+        <p><a href="mailto:moodblocks.support@gmail.com">Contact Mood Blocks Support</a></p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Oğuzhan Dilmaç · Mood Blocks
+    </footer>
+  </div>
+</body>
+</html>
