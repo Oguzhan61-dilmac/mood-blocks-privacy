@@ -230,13 +230,13 @@
       <h1>Privacy Policy for Mood Blocks</h1>
       <p class="lead">
         This Privacy Policy explains how Mood Blocks handles information when you play the game,
-        use the online leaderboard, or load content provided by third-party services.
+        use the online leaderboard, view ads, manage advertising privacy choices, or receive local reminders.
       </p>
       <div class="meta" aria-label="Application details">
         <span class="pill">App: Mood Blocks</span>
         <span class="pill">Package: com.moodblocks.game</span>
         <span class="pill">Developer: Oğuzhan Dilmaç</span>
-        <span class="pill">Effective: August 2, 2026</span>
+        <span class="pill">Effective: August 19, 2026</span>
       </div>
     </header>
 
@@ -258,12 +258,12 @@
             <span>Chosen player name, highest score, and record timestamp.</span>
           </div>
           <div class="data-card">
-            <strong>Advertising and analytics</strong>
-            <span>No AdMob or Google Analytics integration was identified in this version.</span>
+            <strong>Advertising and consent</strong>
+            <span>Google AdMob serves rewarded and interstitial ads. Google's UMP SDK manages consent and privacy choices.</span>
           </div>
           <div class="data-card">
-            <strong>Android permission</strong>
-            <span>Internet access, used for the leaderboard, Firebase libraries, and remote fonts.</span>
+            <strong>Android permissions</strong>
+            <span>Internet access, advertising ID access, and notification permission on supported Android versions.</span>
           </div>
         </div>
       </section>
@@ -276,8 +276,10 @@
           <li>classic-mode and time-mode best scores;</li>
           <li>level progression;</li>
           <li>earned gold;</li>
-          <li>the active theme and unlocked themes; and</li>
-          <li>power-up inventory, including hammer, refresh, and bomb quantities.</li>
+          <li>the active theme and unlocked themes;</li>
+          <li>power-up inventory, including hammer, refresh, bomb, and rotate quantities;</li>
+          <li>advertising frequency counters and timestamps; and</li>
+          <li>whether optional return reminders are enabled.</li>
         </ul>
         <p>
           Older installations may also retain a legacy local score-history record containing player
@@ -299,16 +301,49 @@
       <section aria-labelledby="technical-title">
         <h2 id="technical-title">Technical and device information</h2>
         <p>
-          This version does not directly request access to your advertising ID, Android device ID,
-          precise or approximate location, contacts, photos, camera, microphone, phone number, or email address.
-          It does not include an identified advertising or analytics SDK.
+          Mood Blocks includes the Google Mobile Ads SDK and Google's User Messaging Platform (UMP) SDK.
+          The Mobile Ads SDK may automatically collect or share IP address, app interactions (such as app
+          launches, taps, and ad or video views), diagnostic information (such as launch time, hang rate,
+          and energy use), and device or account identifiers such as the Android advertising ID and app set ID.
+          The app does not request precise or approximate location, contacts, photos, camera, microphone,
+          phone number, or email address.
         </p>
         <p>
           Internet services necessarily receive technical network information when your device connects.
-          Firebase and Google Fonts may process information such as your IP address, requested URL,
+          AdMob, Firebase, and Google Fonts may process information such as your IP address, requested URL,
           HTTP headers, browser or WebView user-agent information, and operating-system information to
-          deliver their services, maintain security, and prevent abuse. Mood Blocks does not use this
-          technical information to display targeted advertising.
+          deliver their services, maintain security, measure performance, prevent abuse, and, where permitted
+          by your choices and applicable law, select or personalize advertising.
+        </p>
+      </section>
+
+      <section aria-labelledby="advertising-title">
+        <h2 id="advertising-title">Advertising, consent, and privacy options</h2>
+        <p>
+          Mood Blocks uses Google AdMob to show optional rewarded ads and occasional interstitial ads.
+          Depending on your region, choices, device settings, and applicable law, Google may serve
+          personalized ads, non-personalized ads, or ads with limited data processing. The Google UMP SDK
+          requests and records advertising consent where required and determines whether a privacy-options
+          form must be made available.
+        </p>
+        <p>
+          You can reopen the consent or privacy-options form from <strong>Market &gt; Privacy Options</strong>
+          whenever Google indicates that the option is required. You can also reset or delete the Android
+          advertising ID from your device's privacy settings. Advertising and consent requests are transmitted
+          using TLS. Google and participating advertising technology providers may process the technical,
+          interaction, diagnostic, and identifier data described above for advertising, analytics, fraud
+          prevention, security, and regulatory compliance.
+        </p>
+      </section>
+
+      <section aria-labelledby="notifications-title">
+        <h2 id="notifications-title">Local return reminders</h2>
+        <p>
+          If you grant Android's notification permission and enable reminders, Mood Blocks may schedule
+          friendly reminders on your device after periods of inactivity. These notifications are created and
+          scheduled locally by the app. Mood Blocks does not use Firebase Cloud Messaging (FCM), does not
+          generate or upload a push-notification token, and does not send notification scheduling data to a
+          developer server. You can turn reminders off in the app or disable notifications in Android settings.
         </p>
       </section>
 
@@ -318,6 +353,8 @@
           <li>To preserve game progress and preferences between sessions.</li>
           <li>To operate the public high-score leaderboard.</li>
           <li>To display and compare leaderboard rankings.</li>
+          <li>To serve and measure rewarded and interstitial advertising, manage consent, and prevent ad fraud.</li>
+          <li>To schedule optional return reminders locally on your device.</li>
           <li>To load the Firebase libraries and fonts required by the current app interface.</li>
           <li>To maintain service reliability, security, and abuse prevention through service providers.</li>
         </ul>
@@ -329,7 +366,9 @@
           We do not sell player information. Leaderboard information is shared with Google Firebase for
           hosting and database processing, and the chosen player name and score are displayed to other
           Mood Blocks players. Google receives technical request information when Firebase resources or
-          Google Fonts are loaded.
+          Google Fonts are loaded. Advertising and related technical information is shared with Google AdMob
+          and, where applicable, Google's advertising technology providers to provide and measure ads, manage
+          consent, comply with legal requirements, maintain security, and prevent fraud.
         </p>
         <p>
           Information may also be disclosed where required by law, to protect users or the service, or in
@@ -351,6 +390,16 @@
             See <a href="https://developers.google.com/fonts/faq/privacy">Google Fonts Privacy and Data Collection</a>.
           </li>
           <li>
+            <strong>Google AdMob and Google Mobile Ads SDK</strong> — provides and measures rewarded and
+            interstitial advertising and supports fraud prevention.
+            See <a href="https://policies.google.com/technologies/ads">How Google uses information for advertising</a>.
+          </li>
+          <li>
+            <strong>Google User Messaging Platform (UMP)</strong> — presents consent messages and privacy
+            options where required. See
+            <a href="https://developers.google.com/admob/android/privacy">Google's AdMob privacy guidance</a>.
+          </li>
+          <li>
             <strong>Google</strong> — see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>
             for Google's own processing practices.
           </li>
@@ -364,8 +413,9 @@
       <section aria-labelledby="security-title">
         <h2 id="security-title">Data security</h2>
         <p>
-          Firebase connections use HTTPS. Google states that Cloud Firestore data is encrypted in transit
-          and at rest. Local game data is kept within the app's WebView storage and Android app sandbox;
+          Connections to Firebase, AdMob, UMP, and other Google services use HTTPS/TLS. Google states that
+          Cloud Firestore data is encrypted in transit and at rest. Local game data is kept within the app's
+          WebView storage and Android app sandbox;
           however, no storage or transmission method can be guaranteed to be completely secure.
         </p>
         <p>
@@ -395,7 +445,7 @@
       <section aria-labelledby="children-title">
         <h2 id="children-title">Children's privacy</h2>
         <p>
-          Mood Blocks is a general-audience puzzle game and does not ask for age, email address, phone number,
+          Mood Blocks is intended for players aged 13 and older. It does not ask for age, email address, phone number,
           or a real-world identity. The public leaderboard does accept a player-chosen name, so children should
           use a nickname that does not reveal their real name or other personal information. Where required by
           local law, children should use the app with permission and supervision from a parent or guardian.
@@ -416,6 +466,9 @@
         <ul>
           <li>Clear local information through Android's app-storage settings or by uninstalling the app.</li>
           <li>Use a non-identifying nickname for the public leaderboard.</li>
+          <li>Review advertising consent choices from Market &gt; Privacy Options when available.</li>
+          <li>Reset or delete the Android advertising ID in Android privacy settings.</li>
+          <li>Turn local reminders off in the app or disable notifications in Android settings.</li>
           <li>Contact the developer about a leaderboard record or privacy request.</li>
         </ul>
       </section>
@@ -436,9 +489,6 @@
         </p>
         <p><a class="contact" href="mailto:moodblocks.support@gmail.com">moodblocks.support@gmail.com</a></p>
         <p><a href="data-deletion.html">Request Data Deletion</a></p>
-        <p class="notice">
-          This placeholder must be replaced with a monitored contact email address before the policy is published.
-        </p>
       </section>
     </main>
 
