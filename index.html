@@ -244,26 +244,26 @@
       <section class="summary" aria-labelledby="summary-title">
         <h2 id="summary-title">Privacy at a glance</h2>
         <p>
-          Mood Blocks stores game progress on your device. When the online leaderboard is available,
-          the app sends your chosen player name, highest score, and the time of the score record to
-          Google Firebase Cloud Firestore. Leaderboard names and scores are visible to other players.
+          Mood Blocks supports Google Sign-In to protect your game progression, scores, and account across devices using Firebase Authentication.
+          Your account identity is tied to a secure Firebase Authentication User ID (UID). Player nicknames are chosen independently by you and
+          never leak your private Gmail address on public leaderboards.
         </p>
         <div class="data-grid">
           <div class="data-card">
-            <strong>Stored on your device</strong>
-            <span>Player name, scores, level progress, gold, themes, and power-up inventory.</span>
+            <strong>Authentication & Identity</strong>
+            <span>Google Sign-In via Firebase Authentication UID. Your email is kept strictly private for auth purposes.</span>
           </div>
           <div class="data-card">
-            <strong>Sent for the leaderboard</strong>
-            <span>Chosen player name, highest score, and record timestamp.</span>
+            <strong>Leaderboard & Progression</strong>
+            <span>Your chosen unique nickname, highest scores, and game progress (gold, themes, boosters) are saved to your Firebase Auth UID account.</span>
           </div>
           <div class="data-card">
             <strong>Advertising and consent</strong>
             <span>Google AdMob serves rewarded and interstitial ads. Google's UMP SDK manages consent and privacy choices.</span>
           </div>
           <div class="data-card">
-            <strong>Android permissions</strong>
-            <span>Internet access, advertising ID access, and notification permission on supported Android versions.</span>
+            <strong>Account Deletion Control</strong>
+            <span>You can delete your entire account, nickname reservation, and leaderboard records directly in app settings (Market &gt; Hesabı Sil).</span>
           </div>
         </div>
       </section>
